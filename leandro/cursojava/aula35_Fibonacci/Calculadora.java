@@ -1,4 +1,4 @@
-package leandro.cursojava.aula36;
+package leandro.cursojava.aula35_Fibonacci;
 
 public class Calculadora {
     public static int fibinacci(int num) {

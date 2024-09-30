@@ -1,4 +1,4 @@
-package leandro.cursojava.aula37;
+package leandro.cursojava.aula35_Fibonacci_recursivo;
 
 public class TesteCalculadora {
     public static void main(String[] args) {
