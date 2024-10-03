@@ -1,10 +1,21 @@
 package leandro.cursojava.aula36;
 
-public class Teste {
+public class Exer01 {
     public static void main(String[] args) {
         Contato contato = new Contato();
 
         contato.setNome("João");
+
+        Endereco end = new Endereco();
+
+        end.setNomeRua("Rua Alberto");
+        end.setNumero("4568");
+        end.setComplemento("Centro");
+        end.setCidade("Mogi das Cruzes");
+        end.setEstado("São Paulo");
+        end.setCep("00000-111");
+
+        contato.setEndereco(end);
 
         Telefone telefone1 = new Telefone();
         telefone1.setNumero("99999-999");
@@ -23,18 +34,6 @@ public class Teste {
 
         contato.setTelefones(telefones);
 
-        // Objeto Endereço
-        Endereco end = new Endereco();
-
-        end.setNomeRua("Rua Alberto");
-        end.setNumero("4568");
-        end.setComplemento("Centro");
-        end.setCidade("Mogi das Cruzes");
-        end.setEstado("São Paulo");
-        end.setCep("00000-111");
-
-        contato.setEndereco(end);
-        
         System.out.println(contato.getNome());
 
         if (contato != null && contato.getEndereco() != null) {
